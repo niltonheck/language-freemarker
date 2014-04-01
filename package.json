@@ -1,12 +1,11 @@
 {
   "name": "language-freemarker",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Adds syntax highlighting of Freemarker files in Atom.",
   "repository": "https://github.com/niltonheck/language-freemarker",
   "license": "MIT",
   "engines": {
     "atom": ">0.50.0"
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }
