@@ -1,0 +1,4 @@
+'.text.html.ftl':
+  'editor':
+    'commentStart': '<#-- '
+    'commentEnd': ' -->'

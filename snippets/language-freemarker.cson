@@ -1,0 +1,52 @@
+'.text.html.ftl':
+  '@spring.bind':
+    'prefix': '@sb'
+    'body': '<@spring.bind "${1:object.field}"/>$0'
+  '@spring.formInput':
+    'prefix': '@sfi'
+    'body': '<@spring.formInput path="${1:path}"/>$0'
+  '@spring.formPasswordInput':
+    'prefix': '@sfp'
+    'body': '<@spring.formPasswordInput path="${1:path}"/>$0'
+  '@spring.message':
+    'prefix': '@sm'
+    'body': '<@spring.message code="$1"/>$0'
+  '@spring.messageArgs':
+    'prefix': '@sma'
+    'body': '<@spring.messageArgs "${1:code}", [${2:args}]/>$0'
+  '@spring.theme':
+    'prefix': '@st'
+    'body': '<@spring.theme code="$1"/>$0'
+  'Directive (#)':
+    'prefix': '#'
+    'body': '<#$1>$0</${1/\\s.*$//}>'
+  'Macro (@)':
+    'prefix': '@'
+    'body': '<@$1>$0</${1/\\s.*$//}>'
+  'Simple Directive (#/)':
+    'prefix': '#/'
+    'body': '<#$1/>$0'
+  'Simple Macro (@/)':
+    'prefix': '@/'
+    'body': '<@$1/>$0'
+  'assign long (#a)':
+    'prefix': '#a'
+    'body': '<#assign ${1:var}>${2:value}</#assign>$0'
+  'assign short (#=)':
+    'prefix': '#='
+    'body': '<#assign ${1:var}=${2:value}/>$0'
+  'else (#e)':
+    'prefix': '#e'
+    'body': '<#else>$0'
+  'if (#if)':
+    'prefix': '#if'
+    'body': '<#if (${1:condition})>\n\t$0\n</#if>'
+  'list (#li)':
+    'prefix': '#li'
+    'body': '<#list ${1:collection} as ${2:element}>\n\t$0\n</#list>'
+  'local short (#l)':
+    'prefix': '#l'
+    'body': '<#local ${1:var}=${2:value}/>$0'
+  'macro (#m)':
+    'prefix': '#m'
+    'body': '<#macro ${1:name} ${2:parameters}>\n\t$0\n</#macro>'
