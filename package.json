@@ -5,7 +5,8 @@
   "repository": "https://github.com/niltonheck/language-freemarker",
   "license": "MIT",
   "engines": {
-    "atom": "*",
-    "note": "*"
+    "atom": ">0.50.0"
   },
+  "dependencies": {
+  }
 }
